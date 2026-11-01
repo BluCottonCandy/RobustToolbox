@@ -39,7 +39,7 @@ internal sealed class RobustMemoryManager
             catch
             {
                 // Logging may already be shut down. A diagnostic must never make finalization fatal.
-                try { Console.Error.WriteLine(message); }
+                try { System.Console.Error.WriteLine(message); }
                 catch { /* No usable logging destination remains. */ }
             }
         };
