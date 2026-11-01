@@ -93,6 +93,9 @@ internal sealed partial class PvsSystem
             }
             finally
             {
+                // A failed send must not leave a stream to be overwritten next tick.
+                data.StateStream?.Dispose();
+                data.StateStream = null;
                 _pvs._threadResourcesPool.Return(resource);
             }
         }
