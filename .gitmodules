@@ -1,6 +1,7 @@
 [submodule "NetSerializer"]
 	path = NetSerializer
-	url = https://github.com/space-wizards/netserializer
+	url = https://github.com/BluCottonCandy/netserializer.git
+	branch = fix/reclamation-length-bounds
 [submodule "Lidgren.Network"]
 	path = Lidgren.Network/Lidgren.Network
 	url = https://github.com/space-wizards/lidgren-network-gen3.git
